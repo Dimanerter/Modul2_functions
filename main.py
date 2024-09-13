@@ -1,6 +1,6 @@
-def modify_string(original: str) -> str:
-    original = "chenge"
-    return original
-str_var = "orig"
-print(modify_string(str_var))
-print(str_var)
+def modify_list(lst: list) -> None:
+    lst.append(4)
+
+my_list = [1, 2, 3]
+modify_list(my_list)
+print(my_list)
