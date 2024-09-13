@@ -1,6 +1,10 @@
-def modify_list(lst: list) -> None:
-    lst.append(4)
+def string_to_codes(string: str) -> dict:
+    codes = {}
+    for ch in string:
+        if ch not in codes:
+            codes[ch] = ord(ch)
+    return codes
 
-my_list = [1, 2, 3]
-modify_list(my_list)
-print(my_list)
+result = string_to_codes("Hello world!")
+print(result)
+    
