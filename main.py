@@ -1,6 +1,4 @@
-def add_numbers(num1: int, num2: int) -> int:
-    sum = num1 + num2
-    return sum
-
-result = add_numbers(5, 10)
-print(result)
+def greet(name:str) -> str:
+    return f"Привет, {name}"
+greeting =  greet("Олексей")
+print(greeting)
