@@ -1,10 +1,8 @@
-x = 50 
+def greet(name, message = "Привет"):
+    print(f"{message}, {name}")
 
-def func():
-    global x
-    print('x дорівнює', x)
-    x = 2
-    print('Змінюємо глобальне значення x на', x)
+# використовує значення за замовчуванням для message
+greet("Олексій")  
 
-func()
-print('Значення x складає', x)
+# передача власного значення для message
+greet("Марія", message="Добрий день")  
