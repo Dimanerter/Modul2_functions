@@ -1,10 +1,10 @@
-def string_to_codes(string: str) -> dict:
-    codes = {}
-    for ch in string:
-        if ch not in codes:
-            codes[ch] = ord(ch)
-    return codes
+x = 50 
 
-result = string_to_codes("Hello world!")
-print(result)
-    
+def func():
+    global x
+    print('x дорівнює', x)
+    x = 2
+    print('Змінюємо глобальне значення x на', x)
+
+func()
+print('Значення x складає', x)
