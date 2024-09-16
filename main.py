@@ -1,5 +1,5 @@
-def print_all_args(*args):
-    for arg in args:
-        print(arg)
+def greet(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key} : {value}")
 
-print_all_args(1, "Hello", True)
+greet(name="Alice", age=25)
