@@ -1,4 +1,7 @@
-def greet(name, age):
-    print(f"Hello {name}, you are {age} years old")
-person_info = {"name": "Alice", "age": 25}
-greet(**person_info)
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+    
+print(factorial(5))
