@@ -1,5 +1,5 @@
-def greet(**kwargs):
-    for key, value in kwargs.items():
-        print(f"{key} : {value}")
+def example_function(*args, **kwargs):
+    print("Позиційні аргументи:", args)
+    print("Ключові аргументи:", kwargs)
 
-greet(name="Alice", age=25)
+example_function(1, 2, name="Alice", age=25)
