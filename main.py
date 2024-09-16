@@ -1,5 +1,4 @@
-def example_function(*args, **kwargs):
-    print("Позиційні аргументи:", args)
-    print("Ключові аргументи:", kwargs)
-
-example_function(1, 2, name="Alice", age=25)
+def greet(name, age):
+    print(f"Hello {name}, you are {age} years old")
+person_info = {"name": "Alice", "age": 25}
+greet(**person_info)
